@@ -11,7 +11,7 @@ bool is_a_palindrome(int integers[], int length){
     // for loop to iteriate the entire array 
     for (int i = 0; i <= length/2; i++){
         if (integers[i] != integers[length - i - 1]){
-            return -2;
+            return false;
         }
     }
     return true;
@@ -43,12 +43,16 @@ int sum_if_a_palindrome(int integers[], int length){
 
     //if the is_a_palindrome function returns true i.e. 1, only then use the second function to add all the elements 
 
-int array_or_not = 0;
-array_or_not = bool is_a_palindrome(int integers[], int length);
+char array_or_not = 0;
+array_or_not = is_a_palindrome( integers, length);
 
     if ( array_or_not == 1){
         
-        sum_array(integers,length);
+       std::cout << sum_array(integers,length);
     }
-return sum_array;
+    else {
+        
+        return -2;
+
+    }
 }
