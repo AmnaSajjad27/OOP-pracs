@@ -47,8 +47,7 @@ char array_or_not = 0;
 array_or_not = is_a_palindrome( integers, length);
 
     if ( array_or_not == 1){
-        
-       std::cout << sum_elements(integers,length);
+        sum_elements(integers,length);
     }
     else {
         
