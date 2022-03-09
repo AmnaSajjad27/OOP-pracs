@@ -55,4 +55,5 @@ array_or_not = is_a_palindrome( integers, length);
         return -2;
 
     }
+    return sum_array(integers,length);
 }
