@@ -18,7 +18,7 @@ bool is_a_palindrome(int integers[], int length){
 }
 
 // function that sums the elements of an array 
-int sum_array(int integers[], int length){
+int sum_elements(int integers[], int length){
 
     // creating an empty variable sum 
     int sum = 0;
@@ -39,7 +39,7 @@ int sum_array(int integers[], int length){
 int sum_if_a_palindrome(int integers[], int length){
 
     extern bool is_a_palindrome(int integers[], int length);
-    extern int sum_array(int integers[], int length);
+    extern int sum_elements(int integers[], int length);
 
     //if the is_a_palindrome function returns true i.e. 1, only then use the second function to add all the elements 
 
@@ -48,12 +48,12 @@ array_or_not = is_a_palindrome( integers, length);
 
     if ( array_or_not == 1){
         
-       std::cout << sum_array(integers,length);
+       std::cout << sum_elements(integers,length);
     }
     else {
         
         return -2;
 
     }
-    return sum_array(integers,length);
+    return sum_elements(integers,length);
 }
