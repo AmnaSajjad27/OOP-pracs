@@ -12,14 +12,18 @@ void print_class(std::string courses[4], std::string students[], int report_card
     cout << courses[i] << " ";
     }
     cout << endl;
+
     // print out student name
     for (int i = 0; i < nstudents; i++){
     cout << students[i];
-        cout << " ";
+      cout << " ";
     for (int j = 0; j < 4; j++){
     // print out the 4 cources for that student
     cout << report_card[i][j];
-    cout << " ";
+    if (j!=3){
+            cout << " ";
+    }
+
     }
     cout << endl;
     }
