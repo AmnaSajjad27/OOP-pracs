@@ -11,6 +11,7 @@ int decimal = 0;
         if (binary_digits[i] % 10 == 1){
             decimal = decimal + pow(2,i);
         }
+        decimal/=10;
 }
 return decimal;
 }
