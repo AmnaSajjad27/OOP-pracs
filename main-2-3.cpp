@@ -8,6 +8,6 @@ int main(){
     int integers[] = {1,2,3,3,2,1};
     int length = 6;
 
-    std::cout << sum_if_a_palindrome(integers, length) << std::endl;
+    std::cout << sum_elements(integers, length) << std::endl;
 
 }
