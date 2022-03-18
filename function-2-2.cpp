@@ -7,9 +7,9 @@ int binary_to_number(int binary_digits[], int number_of_digits){
 
 int decimal = 0;
 
-    for (int i = number_of_digits -1; i >= 0; i--){
+    for (int i = (number_of_digits -1); i >= 0; i--){
         if (binary_digits[i] % 10 == 1){
-            decimal = decimal + (pow(2,number_of_digits - i));
+            decimal = decimal + (pow(2, number_of_digits -i -1));
         }
 
 }
