@@ -9,7 +9,7 @@ int decimal = 0;
 
     for (int i = 0; i < number_of_digits; i++){
         if (binary_digits[i] % 2 == 0){
-            decimal = decimal + pow(2,i);
+            decimal = decimal + pow(i,2);
         }
 }
 return decimal;
