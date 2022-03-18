@@ -47,7 +47,6 @@ int sum_elements(int integers[], int length){
 
 int f_sum = sum_if_a_palindrome(integers,length);
 
-std::cout << f_sum << std::endl;
 
 return f_sum;
 }
