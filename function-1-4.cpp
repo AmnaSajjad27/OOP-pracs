@@ -15,7 +15,7 @@ void cpyda(double *old_array,double *new_array,int length){
     for (int i = 0; i < length; i++){
         ptr_2[i] = ptr_1[i];
 
-        std::cout << ptr_2[i] << std::endl;
+      //  std::cout << ptr_2[i] << std::endl;
     }
 
 }
