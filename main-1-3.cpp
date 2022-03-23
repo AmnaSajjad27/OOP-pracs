@@ -1,4 +1,4 @@
-# include <iostrean>
+# include <iostream>
 
 extern void cpyia(int old_array[],int new_array[],int length);
 
