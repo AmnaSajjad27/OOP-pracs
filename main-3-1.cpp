@@ -8,10 +8,10 @@ int main(){
     // call readNumbers twice for two arrays
 
     int numbers1[5] = {1,2,3,4,5};
-    int numbers2[5] = {1,2,3,4,5};
+    int numbers2[5] = {1,2,3,4,6};
     int length = 5;
    
-   equalsArray(numbers1,numbers2,length);
+   std::cout << equalsArray(numbers1,numbers2,length);
 
  //delete[] numbers1;
  //delete[] numbers2;
