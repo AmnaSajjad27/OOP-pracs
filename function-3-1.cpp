@@ -23,7 +23,9 @@ for (int i=0; i<length; i++){
         if (numbers1[i] != numbers2[i])
         return false;
     }
+           std::cout << "arrays are the same" << std::endl;
         return true;
+
 }
 
 /* prints all the numbers in the array 

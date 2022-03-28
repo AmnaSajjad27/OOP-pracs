@@ -11,7 +11,7 @@ int main(){
     int numbers2[5] = {1,2,3,4,5};
     int length = 5;
    
-   std::cout<< equalsArray(numbers1,numbers2,length);
+   equalsArray(numbers1,numbers2,length);
 
  //delete[] numbers1;
  //delete[] numbers2;
