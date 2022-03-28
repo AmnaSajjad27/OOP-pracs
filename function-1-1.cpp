@@ -18,10 +18,11 @@ int *readNumbers(){
 void printNumbers(int *numbers,int length){
 
     extern int *readNumbers();
-
+if (length > 0){
     for (int i=0; i<length; i++){
         std::cout << i << " ";
         std::cout << numbers[i] << std::endl;
     }
+}
 
 }
