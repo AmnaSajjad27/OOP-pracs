@@ -10,6 +10,8 @@ void print_until_down(int *vals, int len){
 
         if (vals[i+1] > vals[i]){
             std::cout << vals[i+1] << " ";
+
         }
     }
+    std::cout << "\n";
 }
