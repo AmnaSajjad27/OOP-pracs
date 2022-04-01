@@ -8,7 +8,7 @@ void print_until_down(int *vals, int len){
 
     for (int i = 0; i < len-1 ; i++){
 
-        if (vals[i+1] > vals[i]){
+        if (vals[i+1] >= vals[i]){
             std::cout << vals[i+1] << " ";
 
         }
