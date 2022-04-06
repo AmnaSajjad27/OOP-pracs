@@ -4,8 +4,8 @@
 using namespace std;
 // Default constructor 
 meerkat::meerkat(){
-    name = "NA";
-    age = 1;
+    name = "A";
+    age = 9;
     }
 
 // get and set 

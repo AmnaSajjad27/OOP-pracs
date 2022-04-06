@@ -4,17 +4,16 @@
 using namespace std;
 
 int main(){
-// meerkat m1 = meerkat("Anna",8);
-//  person P_1 = person("Mina",18);
-person P_1;
 
-// b.set_author("Amn");
-// cout << b.get_author() << endl;
+    person P_1;
+    P_1.setName("mina");
+    P_1.setSalary(19);
 
-P_1.setName("mina");
-P_1.setSalary(19);
+   /*  cout << P_1.getName() << P_1.getSalary() << endl;
 
- cout << P_1.getName() << P_1.getSalary() << endl;
+    P_1.setName("amna");
+    
+    cout << P_1.getName() << P_1.getSalary() << endl; */
 
    return 0;
 
