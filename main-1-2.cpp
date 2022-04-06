@@ -14,8 +14,10 @@ int main(){
 // b.set_author("Amn");
 // cout << b.get_author() << endl;
 
-// person P1.set_myName("mina");
-// P_1.set_mySalary(19);
+P_1.setName("mina");
+P_1.setSalary(19);
+
+ cout << P_1.getName() << P_1.getSalary() << endl;
 
 
 }
