@@ -1,4 +1,8 @@
+# include <iostream>
 # include <string>
+# ifndef PERSON_H
+# define PERSON_H
+
 
 using namespace std;
 
@@ -9,12 +13,16 @@ class person{
     int Salary;
 
     public:
-    person();
+    
+person();
+
+    void setName(string myName); 
+    string getName();
+
+    void setSalary(int mySalary);
+    int getSalary();
+
     person (string _myName, int _Salary);
 
-void setName(string myName);      // change the person's name
-string getName();
-void setSalary(int mySalary);     // change the person's salary
-int getSalary();
-
 };
+# endif

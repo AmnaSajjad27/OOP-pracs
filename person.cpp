@@ -5,25 +5,21 @@ using namespace std;
 
 // Default constuctor 
 person::person(){
-    myName = "NA";
-    Salary = 1000;
+    myName = "";
+    Salary = 0;
 }
 
-person::person(string _myName, int _Salary){
-    myName = _myName;
-    Salary = _Salary;
+void person:: setName (string Name){
+    myName = Name;
+}
+string person:: getName(){
+    return myName;
 }
 
-// setter name 
-void setName(string myName){
-    myName = myName;
-}
-// getter name
-string getName();
 
-// setter Salary
-void setSalary(int mySalary){
-    mySalary = mySalary;
+void person:: setSalary(int mySalary){
+    Salary = mySalary;
 }
-// getter Salary
-int getSalary();
+int person:: getSalary(){
+    return Salary;
+}
