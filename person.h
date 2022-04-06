@@ -22,7 +22,7 @@ person();
     void setSalary(int mySalary);
     int getSalary();
 
-    person (string _myName, int _Salary);
+    person (string _Name, int _Salary);
 
 };
 # endif
