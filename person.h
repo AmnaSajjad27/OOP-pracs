@@ -14,7 +14,7 @@ class person{
 
     public:
     
-person();
+    person();
 
     void setName(string myName); 
     string getName();
