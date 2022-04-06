@@ -1,4 +1,9 @@
+# include <iostream>
 # include <string>
+# ifndef MEERKAT_H
+# define MEERKAT_H
+
+using namespace std;
 
 // Define a class "meerkat"
 
@@ -8,5 +13,13 @@ class meerkat {
 
     public:
         meerkat();
-        meerkat(std::string _name, int _age);
+
+        void setName(string meerName);
+        string getName();
+        
+        void setAge(int meerAge);
+        int getAge();
+
+       meerkat(std::string _name, int _age);
 };
+# endif
