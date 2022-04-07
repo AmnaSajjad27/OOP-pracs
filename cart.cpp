@@ -12,9 +12,9 @@ bool cart::addMeerkat(meerkat cat){
     count++;
     
     if (count > 3){
-        return false;
+        return 0;
     }
-    return true;
+    return 1;
 }
 
 void cart::printMeerkats(){
