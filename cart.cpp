@@ -27,7 +27,7 @@ void cart::printMeerkats(){
 void cart::emptyCart(){
     for (int i = 0; i < (count + 1); i++) {
     //    cats[i]-> ~meerkat();
-    delete[] &(cats[i+1]);
+    delete[] &(cats[i]);
     }
     count = 0;
 }
