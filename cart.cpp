@@ -11,7 +11,7 @@ bool cart::addMeerkat(meerkat cat){
     cats[count] = cat;
     count++;
     
-    if (count <= 3){
+    if (count <= 4){
         return 1;
        //  cout << "oops cannot add meerkat";
     }
