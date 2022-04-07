@@ -19,7 +19,7 @@ bool cart::addMeerkat(meerkat cat){
 }
 
 void cart::printMeerkats(){
-    for (int i = 0; i < 4; i++){
+    for (int i = 0; i < 3; i++){
     cout << cats[i].getName() << " " << cats[i].getAge() << "\n";
     }
 }
@@ -27,7 +27,7 @@ void cart::printMeerkats(){
 void cart::emptyCart(){
     for (int i = 0; i < (count + 1); i++) {
     //    cats[i]-> ~meerkat();
-    delete[] &(cats[i]);
+    delete[] &(cats[i+1]);
     }
     count = 0;
 }
