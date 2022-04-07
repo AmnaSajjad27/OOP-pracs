@@ -1,6 +1,5 @@
-# include "meerkat.h"
 # include "cart.h"
-
+# include "meerkat.h"
 using namespace std;
 
 int main(){

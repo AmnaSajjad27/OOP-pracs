@@ -17,8 +17,8 @@ bool cart::addMeerkat(meerkat cat){
     return true;
 }
 
-void printMeerkats(){
-    for (int i = 0; i <= 4; i++){
+void cart::printMeerkats(){
+    for (int i = 0; i < 4; i++){
     cout << cats[i].getName() << " " << cats[i].getAge() << "\n";
     }
 }

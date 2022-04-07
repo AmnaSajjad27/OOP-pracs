@@ -1,11 +1,8 @@
-# include <iostream>
-# include <string>
 # ifndef CART_H
 # define CART_H
 # include "meerkat.h"
-
-using namespace std;
-
+# include <iostream>
+# include <string>
 class cart{
     public:
         cart();                         // create an empty cart object
