@@ -31,5 +31,6 @@ void cart::emptyCart(){
     //    cats[i]-> ~meerkat();
     delete[] &(cats[i]);
     }
+    count = 0;
 }
 
