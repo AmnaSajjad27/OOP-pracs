@@ -22,7 +22,10 @@ class person{
     void setSalary(int mySalary);
     int getSalary();
 
-    person (string _Name, int _Salary);
+    person (string _Name, int _Salary){
+        myName = _Name;
+        Salary = _Salary;
+    };
 
 };
 # endif

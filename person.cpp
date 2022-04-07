@@ -6,7 +6,7 @@ using namespace std;
 // Default constuctor 
 person::person(){
     myName = "";
-    Salary;
+    Salary = 0;
 }
 
 void person:: setName (string Name){
