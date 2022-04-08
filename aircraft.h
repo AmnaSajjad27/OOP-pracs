@@ -13,7 +13,7 @@ class aircraft{
 // a pilot and copilot must be provided when creating an aircraft
 
     public:
-
+    aircraft();
     aircraft(string callsign,person thePilot,person theCoPilot){
     callsign = callsign;
     }

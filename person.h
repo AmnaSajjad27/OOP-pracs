@@ -15,17 +15,18 @@ class person{
     public:
     
     person();
-
+    person (string _Name, int _Salary){
+        myName = _Name;
+        Salary = _Salary;
+    };
+    
     void setName(string myName); 
     string getName();
 
     void setSalary(int mySalary);
     int getSalary();
 
-    person (string _Name, int _Salary){
-        myName = _Name;
-        Salary = _Salary;
-    };
+
 
 };
 # endif

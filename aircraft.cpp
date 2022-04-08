@@ -8,21 +8,20 @@ aircraft::aircraft(){};
 // get and set 
 
 void aircraft::setPilot(person thePilot){
-    name = thePilot;
+    thePilot = thePilot;
 }
-
 person getPilot(){
-    return name;
+    return Name;
 }
 
 void aircraft::setCoPilot(person theCoPilot){
-    name = theCoPilot;
+    theCoPilot = theCoPilot;
 }
 person getCoPilot(){
-    return name;
+    return Name;
 }
 
 void aircraft::printDetails(){
-    cout << "the pilot\n" << Pilot.getpilot << "\n";
+    cout << "the pilot\n" << Pilot.getName << "\n";
     cout << CoPilot.getCoPilot << "\n";
 }

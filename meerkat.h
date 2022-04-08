@@ -3,23 +3,23 @@
 # ifndef MEERKAT_H
 # define MEERKAT_H
 
-using namespace std;
-
 // Define a class "meerkat"
 
 class meerkat {
-    string name;
+    std::string name;
     int age;
 
     public:
         meerkat();
 
-        void setName(string meerName);
-        string getName();
+        void setName(std::string meerName);
+        std::string getName();
 
         void setAge(int meerAge);
         int getAge();
 
-       meerkat(std::string _name, int _age);
+        meerkat(std::string _name, int _age);
+        //~meerkat();
+
 };
 # endif

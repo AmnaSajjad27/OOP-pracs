@@ -5,18 +5,21 @@ using namespace std;
 
 cart::cart(){
     count = 0;
-    cats = new meerkat[4];
+    cats = new meerkat[5];
 }
+
 bool cart::addMeerkat(meerkat cat){
-    cats[count] = cat;
-    count++;
-    
-    if (count > 3){
-        return false;
-        cout << "oops cannot add meerkat";
+    // adds meerkat to the cart, returns false if full
+
+    // add meerkats but no more than 4
+    if (count < 4){
+        cats[count] = cat;
+        count++;
+        return true;
+
     }
-    return true;
-}
+    return false;
+    }
 
 void cart::printMeerkats(){
     for (int i = 0; i <= 3; i++){
