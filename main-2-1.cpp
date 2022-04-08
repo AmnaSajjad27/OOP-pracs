@@ -31,10 +31,8 @@ int main(){
         m.setName("idk");
         m.setAge(22);
         if (mycart.addMeerkat(m) == false){
-           // cout << "didnt work" << endl;
+           cout << "didnt work" << endl;
         }
-        else 
-       // cout << "added"<<endl;
     }
 
     return 0;
