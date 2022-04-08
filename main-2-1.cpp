@@ -1,18 +1,41 @@
-# include <iostream>
-
-extern void print_sevens(int *nums,int length);
+# include "cart.h"
+# include "meerkat.h"
+using namespace std;
 
 int main(){
-    // define and initialise a single-dimensional integer array.
-    int nums[5] = {7,14,23,28,70};
 
-    //pointer that points to the first element in the array and pass the pointer to a function.
-    int *ptr = nums;
+    cart mycart;
 
-    int length = 5;
+    meerkat m1;
+    m1.setName("Anna");
+    m1.setAge(8);
 
-    print_sevens(nums,length);
+    meerkat m2;
+    m2.setName("Mina");
+    m2.setAge(18);
 
+    meerkat m3;
+    m3.setName("bob");
+    m3.setAge(10);
 
+    meerkat m4;
+    m4.setName("lee");
+    m4.setAge(19);
 
+    meerkat m5;
+    m5.setName("idk");
+    m5.setAge(22);
+
+    for (int i =0; i<100;i++){
+        meerkat m;
+        m.setName("idk");
+        m.setAge(22);
+        if (mycart.addMeerkat(m) == false){
+            cout << "didnt work" << endl;
+        }
+        else 
+        cout << "added"<<endl;
+    }
+
+    return 0;
 }
