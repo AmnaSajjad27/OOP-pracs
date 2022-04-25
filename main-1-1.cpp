@@ -4,6 +4,7 @@
 using namespace std;
 
 int main(){
+    /*
 
 Musician m1;
 m1.set_instrument("Piano");
@@ -14,5 +15,6 @@ m2.set_instrument("guitar");
 m2.set_experience(18);
 
 std::cout << "I play the " << m1.get_instrument() << endl;
+*/
 
 }
