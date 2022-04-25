@@ -8,8 +8,8 @@ Orchestra::Orchestra(){
 }
 
 Orchestra::Orchestra(int Size){
-    Size = size;
-    Musicians = new Musician[size];
+    size = Size;
+    Musicians = new Musician[Size];
 }
 
 bool Orchestra::add_musician(Musician new_musician){
