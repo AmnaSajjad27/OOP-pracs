@@ -9,11 +9,11 @@ Orchestra::Orchestra(){
 
 Orchestra::Orchestra(int Size){
     size = Size;
-    Musicians = new Musician[Size];
+    Musicians = new Musician[size];
 }
 
 bool Orchestra::add_musician(Musician new_musician){
-    if (size < count){
+    if (count < size){
         Musicians[count] = new_musician;
         count++;
         return true;
