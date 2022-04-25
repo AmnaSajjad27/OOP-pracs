@@ -10,6 +10,7 @@ Orchestra::Orchestra(){
 Orchestra::Orchestra(int Size){
     size = Size;
     Musicians = new Musician[size];
+    count = 0;
 }
 
 bool Orchestra::add_musician(Musician new_musician){
@@ -33,7 +34,7 @@ bool Orchestra::add_musician(Musician new_musician){
  }
 
  int Orchestra::get_current_number_of_members(){
-    return count+1;
+    return (count+1);
  }
 
  Orchestra::~Orchestra(){
