@@ -3,25 +3,27 @@
 
 using namespace std;
 
-aircraft::aircraft(){};
+aircraft::aircraft(){
+    Pilot = 
+};
 
 // get and set 
 
 void aircraft::setPilot(person thePilot){
-    thePilot = thePilot;
+    Pilot = thePilot;
 }
 person getPilot(){
-    return Name;
+    return Pilot;
 }
 
 void aircraft::setCoPilot(person theCoPilot){
-    theCoPilot = theCoPilot;
+    CoPilot = theCoPilot;
 }
 person getCoPilot(){
-    return Name;
+    return CoPilot;
 }
 
 void aircraft::printDetails(){
-    cout << "the pilot\n" << Pilot.getName << "\n";
-    cout << CoPilot.getCoPilot << "\n";
+    cout << "the pilot\n" << Pilot.getName() << "\n";
+    cout << CoPilot.getName() << "\n";
 }

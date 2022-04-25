@@ -12,11 +12,11 @@ Musician::Musician(){
 Musician::Musician(std::string Instrument, int Experience)
 {
     instrument = Instrument;
-    Experience = experience;
+    experience = Experience;
 }
 
 // get and set 
-void Musician :: set_instrument (string what){
+void Musician :: set_instrument (std::string what){
     instrument = what;
 }
 std::string Musician :: get_instrument(){
