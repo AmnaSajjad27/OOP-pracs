@@ -8,7 +8,7 @@ Orchestra::Orchestra(){
 }
 
 Orchestra::Orchestra(int Size){
-    size = Size;
+    Size = size;
     Musicians = new Musician[size];
 }
 
