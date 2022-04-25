@@ -2,6 +2,7 @@
 # include "Musician.h"
 
 using namespace std;
+
 Orchestra::Orchestra(){
     count = 0;
 }
@@ -29,6 +30,10 @@ bool Orchestra::add_musician(Musician new_musician){
     }
 
      return false;
+ }
+
+ int Orchestra::get_current_number_of_members(){
+    return count+1;
  }
 
  Orchestra::~Orchestra(){
