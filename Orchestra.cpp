@@ -34,7 +34,7 @@ bool Orchestra::add_musician(Musician new_musician){
  }
 
  int Orchestra::get_current_number_of_members(){
-    return (count+1);
+    return (count);
  }
 
  Orchestra::~Orchestra(){
