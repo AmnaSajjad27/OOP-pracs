@@ -1,28 +1,18 @@
-# include "meerkat.h"
+# include "Musician.h"
 # include <iostream>
 
+using namespace std;
+
 int main(){
-    using namespace std;
 
-    meerkat m1;
-    m1.setName("Anna");
-    m1.setAge(8);
+Musician m1;
+m1.set_instrument("Piano");
+m1.set_experience(12);
 
-    meerkat m2;
-    m2.setName("Mina");
-    m2.setAge(18);
+Musician m2;
+m2.set_instrument("guitar");
+m2.set_experience(18);
 
-    meerkat m3;
-    m3.setName("bob");
-    m3.setAge(10);
+std::cout << "I play the " << m1.get_instrument() << endl;
 
-    meerkat m4;
-    m4.setName("lee");
-    m4.setAge(19);
-
-
-   // cout << "My name is " << m1.getName() << " and i am " << m1.getAge() << " years old. " << endl;
-
-    
-    return 0;
 }
