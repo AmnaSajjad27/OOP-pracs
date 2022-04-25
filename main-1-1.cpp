@@ -10,11 +10,13 @@ Musician m1;
 m1.set_instrument("Piano");
 m1.set_experience(12);
 
+Musician hello("should output", 12);
+
 Musician m2;
 m2.set_instrument("guitar");
 m2.set_experience(18);
 
-std::cout << "I play the " << m1.get_instrument() << endl;
-*/
+std::cout << "I play the " << hello.get_instrument() << endl;
 
+*/
 }

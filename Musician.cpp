@@ -8,6 +8,12 @@ Musician::Musician(){
     instrument = "null";
     experience = 0;
 }
+// missing my implentation THIS ONE
+Musician::Musician(std::string Instrument, int Experience)
+{
+    instrument = Instrument;
+    Experience = experience;
+}
 
 // get and set 
 void Musician :: set_instrument (string what){
