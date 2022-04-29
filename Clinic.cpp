@@ -1,3 +1,4 @@
+
 # include "Clinic.h"
 # include "Cage.h"
 
@@ -40,4 +41,7 @@ void Clinic::set_name(std::string name){
 }
 std::string Clinic::get_name(){
     return name;
+}
+Clinic::~Clinic(){
+    
 }
