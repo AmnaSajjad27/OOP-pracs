@@ -5,20 +5,23 @@
 animal::animal(std::string n, int v){
     name = n;
     volume = v;
+    animalID = 0;
 }
 
 // get and set name
 void animal::set_name(std::string new_Name){
     new_Name = new_Name;
 }
-
+/*
+dont need this because inherined classes must implent it 
 std::string animal::get_name(){
     return name;
 }
+*/ 
 
 // get and set ID
-int animal::get_animalID(int ID){
-    return ID;
+int animal::get_animalID(){
+    return animalID;
 }
 
 // get and set volume 

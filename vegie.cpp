@@ -1,13 +1,13 @@
 #include "animal.h"
+#include "vegie.h"
 #include <string>
 
 using namespace std;
 
 // constructor 
-vegie::vegie(){
-    n = "null";
-    v = 0;
-    nextID = 100;
+vegie::vegie(std::string n, int v):animal(n,v)
+{
+    favourite_food = "grass";
     nextID++;
 }
 
@@ -20,7 +20,11 @@ string vegie::get_favourite_food(){
     return favourite_food;
 }
 
-// name 
+// vegie's version of the functions 
 std::string vegie::get_name(){
-    return n;
+    return name;
 }
+
+
+// initalise static member 
+int vegie::nextID = 1000;

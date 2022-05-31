@@ -5,10 +5,9 @@
 using namespace std;
 
 // constructor 
-hunter::hunter(){
-    n = "null";
-    v = 0;
-    nextID = 1000;
+// IMPORTANT REVISE 
+hunter::hunter(std::string n,int v):animal(n,v){
+    kills = 0;
     nextID++;
 }
 
@@ -17,11 +16,15 @@ hunter::hunter(){
 void hunter::set_kills(int kills){
     kills = kills;
 }
-int get_kills(){
+int hunter::get_kills(){
     return kills;
 };
 // name 
+// hunters version of the functions 
 std::string hunter::get_name(){
-    return n;
+    return name;
 }
+
+// initalise static member 
+int hunter::nextID = 1000;
 
