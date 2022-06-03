@@ -8,6 +8,8 @@ Document::Document(string t, string d, int n){
     documentType = d;
     numPages = n;
 }
+// other constructor 
+Document::Document(){};
 
 // get and set functions 
 
