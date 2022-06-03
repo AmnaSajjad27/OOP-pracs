@@ -23,8 +23,8 @@ class Contract:public Document{
     // get and set functions
 
     // amountdoc
-    void set_amountdoc(int amount);
-    int get_amountdoc();
+    void set_amountDoc(int amount);
+    int get_amountDoc();
 
     //docID
     void set_docID(int ID);

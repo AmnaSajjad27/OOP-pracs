@@ -12,10 +12,10 @@ Contract::Contract(int n):Document(title,documentType,numPages){
 }
 
 // get and set functions
-void Contract::set_amountdoc(int amount){
+void Contract::set_amountDoc(int amount){
     amountDoc = amount;
 }
-int Contract::get_amountdoc(){
+int Contract::get_amountDoc(){
     return amountDoc;
 }
 
