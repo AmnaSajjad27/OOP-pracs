@@ -5,7 +5,7 @@
 PDF::PDF():Document(title,documentType,numPages){};
 
 PDF::PDF(int v):Document(title,documentType,numPages){
-    v = v;
+    version = v;
 };
 
 // set version 
