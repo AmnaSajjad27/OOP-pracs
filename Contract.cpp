@@ -30,7 +30,7 @@ int Contract::get_docID(){
 // either the value of amountDoc if the document is only one page, otherwise if the Contract is more than one page, return half the pages of numPages
 int Contract::typesetMargins(){
     if (numPages == 1){
-        return (amountDoc);
+        return (amountDoc-1);
     }
     else {
         return (0.5*numPages);
