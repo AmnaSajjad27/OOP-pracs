@@ -36,3 +36,5 @@ void Document::set_numPages(int n){
 int Document::get_numPages(){
     return numPages;
 }
+
+Document::~Document(){};
