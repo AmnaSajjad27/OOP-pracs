@@ -1,10 +1,11 @@
 # include "Document.h"
+# include "Contract.h"
 # include "PDF.h"
 
 // default constructor 
-PDF::PDF():Document(title,documentType,numPages){};
+PDF::PDF():Contract(numPages){};
 
-PDF::PDF(int v):Document(title,documentType,numPages){
+PDF::PDF(int v):Contract(numPages){
     version = v;
 };
 
@@ -18,7 +19,7 @@ bool PDF::hasTOCVersion(){
     if (version > 5){
         return true;
     }
-    else{
+    else {
         return false;
     }
 }

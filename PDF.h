@@ -1,15 +1,17 @@
 # include "Document.h"
+# include "Contract.h"
 # ifndef PDF_H
 # define PDF_H
 
-class PDF:public Document{
+class PDF:public Contract{
 
     protected:
-                  // calls the Contract constructor with numPage==5
-    int version;  // stores the pdf version attribute  
+    // calls the Contract constructor with numPage==5
+    int version;  
+    // stores the pdf version attribute  
 
     public:
-     PDF();        // inherit from base class default constructor
+    PDF();        // inherit from base class default constructor
     PDF(int v);    // sets the version of the pdf
 
     bool hasTOCVersion(); // checks if there is a Table of Contents feature
