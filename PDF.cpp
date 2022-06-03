@@ -3,7 +3,7 @@
 # include "PDF.h"
 
 // default constructor 
-PDF::PDF():Contract(numPages){};
+PDF::PDF():Contract(){};
 
 PDF::PDF(int v):Contract(numPages){
     version = v;
